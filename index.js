@@ -49,3 +49,7 @@ function totalRevenue(drivers) {
     return agg += ele.revenue;
   }, 0);
 }
+
+function averageRevenue(drivers) {
+  return totalRevenue(drivers)/drivers.length
+}
