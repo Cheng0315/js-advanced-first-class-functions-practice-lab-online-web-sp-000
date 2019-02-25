@@ -32,7 +32,7 @@ function driversByName(drivers) {
   });
 
   newDrivers.sort(function (a, b) {
-    return a.name.localeComapre(b.name);
+    return a.localeComapre(b);
   })
 
   return newDrivers;
