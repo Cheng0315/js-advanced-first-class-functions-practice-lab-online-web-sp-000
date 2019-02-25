@@ -15,7 +15,10 @@ function logDriversByHometown(drivers, location) {
 }
 
 function driversByRevenue(drivers) {
-  const newDrivers = drivers;
+  const newDrivers = drivers.map(function (obj) {
+    return Object.assign({}, obj);
+  });
+  
   newDrivers.sort(function (a, b) {
     return a.revenue - b.revenue;
   })
