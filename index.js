@@ -25,3 +25,15 @@ function driversByRevenue(drivers) {
 
   return newDrivers;
 }
+
+function driversByName(drivers) {
+  const newDrivers = drivers.map(function (obj) {
+    return Object.assign({}, obj);
+  });
+
+  newDrivers.sort(function (a, b) {
+    return a.name.localeComapre(b.name);
+  })
+
+  return newDrivers;
+}
