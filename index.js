@@ -7,5 +7,5 @@ function logDriverNames(drivers) {
 }
 
 function logDriversByHometown(drivers, location) {
-  
+
 }
