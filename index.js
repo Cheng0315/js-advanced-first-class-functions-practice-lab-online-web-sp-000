@@ -43,3 +43,7 @@ function driversByName(drivers) {
 
   return newDrivers;
 }
+
+function totalRevenue(drivers) {
+
+}
