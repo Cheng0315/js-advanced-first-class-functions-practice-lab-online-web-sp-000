@@ -32,7 +32,7 @@ function driversByName(drivers) {
   });
 
   newDrivers.sort(function (a, b) {
-    return a.name - b.name;
+    return a.name
   })
 
   return newDrivers;
